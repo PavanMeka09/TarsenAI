@@ -22,7 +22,6 @@ function startBot() {
       if (qr) qrcode.generate(qr, { small: true });
       if (connection === 'open') {
         console.log("✅ Connected");
-        console.log(systemPrompt);
         // try {
         //   const groups = await sock.groupFetchAllParticipating();
         //   const personal_chats = await sock.chats.all();
@@ -44,8 +43,7 @@ function startBot() {
     });
 
     const allowedContacts = [
-      // '@s.whatsapp.net', // 
-      
+      process.env.TESTGROUP
     ];
 
     sock.ev.on('messages.upsert', async ({ messages, type }) => {
