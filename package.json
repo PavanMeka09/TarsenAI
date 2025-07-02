@@ -1,0 +1,19 @@
+{
+  "name": "KizunaAI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@whiskeysockets/baileys": "^6.7.18",
+    "dotenv": "^17.0.1",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
